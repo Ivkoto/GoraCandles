@@ -1,70 +1,166 @@
-# Getting Started with Create React App
+# Gora Candles - E-commerce Shop
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive e-commerce web application for candles, built with React, TypeScript, and Material-UI. This project features a complete shopping experience with cart functionality, product browsing, and elegant design.
 
-## Available Scripts
+## 🌟 Features
 
-In the project directory, you can run:
+### Core Functionality
 
-### `npm start`
+- **Product Catalog**: Browse all available candles with detailed product cards
+- **Shopping Cart**: Full cart management with persistent storage
+- **Trending Products**: Showcase of best-selling and popular items
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **URL-based Navigation**: Bookmarkable pages with browser back/forward support
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Pages
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Home**: Hero section with trending products showcase
+- **Shop**: Complete product catalog with add-to-cart functionality
+- **About Us**: Company information and story
+- **Contacts**: Contact information and details
+- **Cart**: Full cart management with quantity controls, totals, and checkout
 
-### `npm test`
+### Technical Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **TypeScript**: Full type safety throughout the application
+- **Material-UI**: Modern, accessible component library
+- **Context API**: Global state management for cart functionality
+- **Local Storage**: Cart persistence across browser sessions
+- **Modular Architecture**: Clean separation of concerns with reusable components
 
-### `npm run build`
+## 🚀 Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js (version 16 or higher)
+- npm or yarn package manager
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. **Clone the repository**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   git clone https://github.com/Ivkoto/GoraCandles.git
+   cd GoraCandles/gora-candles-shop
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Install dependencies**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Start the development server**
 
-## Learn More
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000) to view the application.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📁 Project Structure
 
-### Code Splitting
+```
+src/
+├── components/
+│   ├── pages/
+│   │   ├── about-us/          # About page components
+│   │   ├── cart/              # Cart page and components
+│   │   ├── contacts/          # Contacts page components
+│   │   ├── home-page/         # Home page components
+│   │   │   ├── header/        # Navigation header
+│   │   │   └── main-content/  # Hero and trending products
+│   │   └── shop/              # Shop page components
+│   └── shared/
+│       ├── footer/            # Call-to-action footer
+│       ├── mega-menu/         # Navigation dropdown
+│       └── product-card/      # Reusable product card
+├── context/
+│   └── CartContext.tsx        # Cart state management
+├── services/
+│   └── productService.ts      # Product data and API simulation
+├── types/
+│   └── index.ts               # Shared TypeScript types
+└── theme.ts                   # Material-UI theme configuration
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🛠️ Available Scripts
 
-### Analyzing the Bundle Size
+### Development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **`npm start`** - Runs the app in development mode
+- **`npm test`** - Launches the test runner
+- **`npm run build`** - Builds the app for production
 
-### Making a Progressive Web App
+### Production Build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The build folder will contain optimized, minified files ready for deployment.
 
-### Advanced Configuration
+## 🎨 Design & Technologies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Frontend Stack
 
-### Deployment
+- **React 18** - Modern React with hooks and functional components
+- **TypeScript** - Type-safe development experience
+- **Material-UI (MUI) v5** - Component library with custom theming
+- **Emotion** - CSS-in-JS styling solution
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### State Management
 
-### `npm run build` fails to minify
+- **React Context API** - Global cart state management
+- **Local Storage** - Cart persistence across sessions
+- **URL Hash Navigation** - Page state persistence on refresh
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Development Tools
+
+- **Create React App** - Project bootstrapping and build tools
+- **ESLint** - Code linting and quality assurance
+- **TypeScript Compiler** - Static type checking
+
+## 🛒 Cart Features
+
+- **Add to Cart**: Add products from shop and trending sections
+- **Quantity Management**: Increase/decrease quantities with intuitive controls
+- **Remove Items**: Individual item removal with confirmation
+- **Persistent Storage**: Cart contents saved in browser localStorage
+- **Price Calculations**: Automatic subtotal, shipping, tax, and total calculations
+- **Promo Codes**: Discount code functionality (mock implementation)
+- **Responsive Design**: Mobile-optimized cart interface
+
+## 🔧 Configuration
+
+### Theme Customization
+
+The application uses a custom Material-UI theme with Gora Candles branding. You can modify colors, typography, and spacing in `src/theme.ts`.
+
+### Product Data
+
+Product information is managed through `src/services/productService.ts`. This service provides mock data and can be easily replaced with real API calls.
+
+## 📱 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is private and proprietary to Gora Candles.
+
+## 📞 Contact
+
+For questions or support, please contact the development team.
+
+---
+
+_Built with ❤️ for Gora Candles_
